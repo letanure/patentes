@@ -9,7 +9,7 @@
       <el-row :gutter="20">
         <el-col :span="10">
           <small>Colunas</small>
-          <el-select v-model="columnsToShow" multiple placeholder="Exibir colunas">
+          <el-select v-model="columnsToShow" filterable multiple placeholder="Exibir colunas">
             <el-option
               v-for="item in columnsAvailable"
               :key="item"
