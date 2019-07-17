@@ -57,8 +57,6 @@
             </template>
           </el-col>
       </el-row>
-      <span>This is a message</span>
-      {{indexVisible}}
       <span slot="footer" class="dialog-footer">
         <el-button @click="detailsVisible = false">Fechar</el-button>
       </span>
