@@ -9,15 +9,19 @@ Vue.use(Vuex)
 const allClassifications = () => {
   let list = []
   allPatents.forEach(item => {
-    list = [...list, ...item['CLASSIFICAÇÃO']]
+    const chopItems = item['CLASSIFICAÇÃO'].map(item => {
+      return item.substring(0, 3)
+    })
+    list = [...list, ...chopItems]
+    // list = [...list, ...item['CLASSIFICAÇÃO']]
   })
-  return [...new Set(list)]
+  return [...new Set(list)].sort()
 }
 
 const allInventors = () => {
   let list = []
   allPatents.forEach(item => {
-    list = [...list, ...item['INVENTOR']]
+    list = [...list, ...item['INVENTOR']].sort()
   })
   return [...new Set(list)]
 }
@@ -29,6 +33,16 @@ const allNatures = () => {
   })
   return [...new Set(list)]
 }
+
+// const allHolders = () => {
+//   let list = []
+//   allPatents.forEach(item => {
+//     list = [...list, item['TITULAR']]
+//   })
+//   return [...new Set(list)]
+// }
+
+// console.log(allHolders())
 
 export default new Vuex.Store({
   state: {
@@ -92,7 +106,10 @@ export default new Vuex.Store({
 
       if (state.classificationsActive.length > 0) {
         list = list.filter(item => {
-          return _.intersection(item['CLASSIFICAÇÃO'], state.classificationsActive).length > 0
+          const chopItems = item['CLASSIFICAÇÃO'].map(item => {
+            return item.substring(0, 3)
+          })
+          return _.intersection(chopItems, state.classificationsActive).length > 0
         })
       }
 
