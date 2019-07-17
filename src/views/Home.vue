@@ -33,6 +33,37 @@
       </el-row>
     </el-card>
 
+    <el-dialog
+      title="Detalhes"
+      :visible.sync="detailsVisible"
+      width="70%"
+      >
+      <el-row :gutter="20" v-for="(item, index) in patentes[indexVisible]" :key="index">
+          <el-col :span="5">
+            {{index}}
+          </el-col>
+          <el-col :span="19">
+            <template v-if="index === 'CLASSIFICAÇÃO'">
+              <el-tag
+                v-for="tag in item"
+                :key="tag"
+                size="small"
+                >
+                  {{tag}}
+              </el-tag>
+            </template>
+            <template v-else>
+              {{item}}
+            </template>
+          </el-col>
+      </el-row>
+      <span>This is a message</span>
+      {{indexVisible}}
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="detailsVisible = false">Fechar</el-button>
+      </span>
+    </el-dialog>
+
     <el-table
       :data="patentesFiltered"
       stripe
@@ -51,7 +82,7 @@
                 v-for="tag in scope.row[scope.column.property]"
                 :key="tag"
                 size="small"
-                xtype="info">
+                >
                   {{tag}}
               </el-tag>
             </template>
@@ -64,8 +95,8 @@
       fixed="right"
       label="Operations"
       width="120">
-      <template>
-        <el-button type="text" size="small"></el-button>
+      <template slot-scope="scope">
+        <el-button type="text" size="small" @click="openDetail(scope.$index)">Detalhes</el-button>
       </template>
     </el-table-column>
     </el-table>
@@ -73,14 +104,11 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
 import patentes from '@/data/patentes.json'
 
 export default {
   name: 'home',
   components: {
-    // HelloWorld
   },
   data () {
     return {
@@ -91,6 +119,8 @@ export default {
         'RESPONSÁVEL'
       ],
       columnsAvailable: Object.keys(patentes[0]),
+      detailsVisible: false,
+      indexVisible: 0,
       patentes: patentes,
       classificationsActive: []
     }
@@ -113,6 +143,12 @@ export default {
       }
       return list
     }
+  },
+  methods: {
+    openDetail (index) {
+      this.indexVisible = index
+      this.detailsVisible = true
+    }
   }
 }
 </script>
@@ -122,4 +158,9 @@ export default {
   width 100%
 .el-tag
   margin 0 5px 5px 0
+.el-dialog__body
+  .el-row
+    margin-bottom 5px
+    border-bottom 1px solid lightgrey
+    padding 5px
 </style>
