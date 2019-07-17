@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import _ from 'lodash'
 import allPatents from '@/data/patentes.json'
 
 Vue.use(Vuex)
@@ -51,9 +52,10 @@ export default new Vuex.Store({
 
     filteredPatents (state) {
       let list = state.allPatents
+
       if (state.classificationsActive.length > 0) {
         list = list.filter(item => {
-          return item['CLASSIFICAÇÃO'].every(elem => state.classificationsActive.indexOf(elem) > -1)
+          return _.intersection(item['CLASSIFICAÇÃO'], state.classificationsActive).length > 0
         })
       }
       return list
