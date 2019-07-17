@@ -35,6 +35,13 @@
             </el-col>
           </el-row>
 
+          <el-row :gutter="20" class="item-filter">
+            <el-col :span="24">
+              <div class="label">Exibir naturezas:</div>
+              <NaturesFilter></NaturesFilter>
+            </el-col>
+          </el-row>
+
         </el-aside>
         <el-main>
           <router-view/>
@@ -47,12 +54,14 @@
 <script>
 import ColumnsFilter from '@/components/ColumnsFilter'
 import ClassificationsFilter from '@/components/ClassificationsFilter'
+import NaturesFilter from '@/components/NaturesFilter'
 
 export default {
   name: 'app',
   components: {
     ColumnsFilter,
-    ClassificationsFilter
+    ClassificationsFilter,
+    NaturesFilter
   },
   data () {
     return {
