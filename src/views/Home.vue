@@ -20,7 +20,7 @@
         </el-col>
         <el-col :span="6">
           <small>Busca Classificação</small>
-          <el-select v-model="classificationsActive" multiple placeholder="Classificaçoes">
+          <el-select v-model="classificationsActive" filterable multiple placeholder="Classificaçoes">
             <el-option
               v-for="item in classifications"
               :key="item"
