@@ -52,6 +52,15 @@
                   {{tag}}
               </el-tag>
             </template>
+            <template v-else-if="index === 'INVENTOR'">
+              <el-tag
+                v-for="tag in item"
+                :key="tag"
+                size="small"
+                >
+                  {{tag}}
+              </el-tag>
+            </template>
             <template v-else>
               {{item}}
             </template>
@@ -84,6 +93,15 @@
                   {{tag}}
               </el-tag>
             </template>
+            <template v-else-if="scope.column.property === 'INVENTOR'">
+              <el-tag
+                v-for="tag in scope.row[scope.column.property]"
+                :key="tag"
+                size="small"
+                >
+                  {{tag}}
+              </el-tag>
+            </template>
             <template v-else >
               {{ scope.row[scope.column.property] }}
             </template>
@@ -103,6 +121,8 @@
 
 <script>
 import patentes from '@/data/patentes.json'
+
+// window.data = patentes
 
 export default {
   name: 'home',
