@@ -1,14 +1,14 @@
 <template>
-  <div class="ColumnsFilter">
+  <div class="ClassificationsFilter">
     <el-select
       @change="change"
       filterable
       multiple
-      placeholder="Exibir colunas"
-      v-model="columnsToShow"
+      placeholder="Classificaçoes"
+      v-model="classificationsActive"
     >
       <el-option
-        v-for="item in columnsAvailable"
+        v-for="item in allClassifications"
         :key="item"
         :label="item"
         :value="item"
@@ -22,23 +22,23 @@
 import { mapState } from 'vuex'
 
 export default {
-  name: 'ColumnsFilter',
+  name: 'ClassificationsFilter',
 
   data () {
     return {
-      columnsToShow: this.$store.state.columnsToShow
+      classificationsActive: this.$store.state.classificationsActive
     }
   },
 
   computed: {
     ...mapState({
-      columnsAvailable: 'columnsAvailable'
+      allClassifications: 'allClassifications'
     })
   },
 
   methods: {
     change (data) {
-      this.$store.dispatch('updateColumnsAvailable', data)
+      this.$store.dispatch('updateclassificationsActive', data)
     }
   }
 

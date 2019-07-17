@@ -21,12 +21,20 @@
             >
           </el-button>
 
-          <el-row :gutter="20">
+          <el-row :gutter="20" class="item-filter">
             <el-col :span="24">
               <div class="label">Exibir colunas:</div>
               <ColumnsFilter></ColumnsFilter>
             </el-col>
           </el-row>
+
+          <el-row :gutter="20" class="item-filter">
+            <el-col :span="24">
+              <div class="label">Exibir classificações:</div>
+              <ClassificationsFilter></ClassificationsFilter>
+            </el-col>
+          </el-row>
+
         </el-aside>
         <el-main>
           <router-view/>
@@ -38,11 +46,13 @@
 </template>
 <script>
 import ColumnsFilter from '@/components/ColumnsFilter'
+import ClassificationsFilter from '@/components/ClassificationsFilter'
 
 export default {
   name: 'app',
   components: {
-    ColumnsFilter
+    ColumnsFilter,
+    ClassificationsFilter
   },
   data () {
     return {
@@ -90,6 +100,9 @@ export default {
       position absolute
       top 5px
       right 5px
+
+    .item-filter
+      margin-bottom 16px
 
     .label
       margin-bottom 3px
