@@ -42,6 +42,13 @@
             </el-col>
           </el-row>
 
+          <el-row :gutter="20" class="item-filter">
+            <el-col :span="24">
+              <div class="label">Exibir inventores:</div>
+              <InventorsFilter></InventorsFilter>
+            </el-col>
+          </el-row>
+
         </el-aside>
         <el-main>
           <router-view/>
@@ -55,13 +62,15 @@
 import ColumnsFilter from '@/components/ColumnsFilter'
 import ClassificationsFilter from '@/components/ClassificationsFilter'
 import NaturesFilter from '@/components/NaturesFilter'
+import InventorsFilter from '@/components/InventorsFilter'
 
 export default {
   name: 'app',
   components: {
     ColumnsFilter,
     ClassificationsFilter,
-    NaturesFilter
+    NaturesFilter,
+    InventorsFilter
   },
   data () {
     return {

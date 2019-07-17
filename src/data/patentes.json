@@ -2362,7 +2362,8 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "FUNDAÇÃO DE AMPARO À PESQUISA DO ESTADO DE SÃO PAULO - FAPESP (BR/SP) ; COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "Gustavo Henrique Costa Varga e Ademar Benévolo Lugão"
+      "Gustavo Henrique Costa Varga",
+      "Ademar Benévolo Lugão"
     ],
     "TÍTULO": "Processo de produção de nanopartículas proteicas utilizando radiação ionizante",
     "RESUMO": "",
@@ -2628,7 +2629,8 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "Ligia Ely Morganti F. Dias e Rosa Maria Chura Chambi"
+      "Ligia Ely Morganti F. Dias",
+      "Rosa Maria Chura Chambi"
     ],
     "TÍTULO": "Proteína de fusão endo-bax e endo-bax-endo e suas sequências de aminoácios",
     "RESUMO": "",
@@ -3272,7 +3274,10 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ) ; UNIVERSIDADE FEDERAL DE ITAJUBÁ (BR/MG)",
     "INVENTOR": [
-      "OLGA ZAZUCO HIGA; FERNANDO JOSÉ COSTA BARATÉIA; ALVARO ANTONIO ALENCAR QUEIROZ; HENRIQUE ANTONIO MENDONÇA FARIA"
+			"OLGA ZAZUCO HIGA",
+			"FERNANDO JOSÉ COSTA BARATÉIA",
+			"ALVARO ANTONIO ALENCAR QUEIROZ",
+			"HENRIQUE ANTONIO MENDONÇA FARIA"
     ],
     "TÍTULO": "DISPOSITIVO RESPONSIVO A IMUNOGLOBULINAS IGG E IGM E SEU PROCESSO DE OBTENÇÃO PARA DIAGNÓSTICO DA DENGUE BASEADO EM POLÍMERO COM ARQUITETURA TIPO ESCOVA",
     "RESUMO": "Patente de Invenção DISPOSITIVO RESPONSIVO A IMUNOGLOBULINAS IgG e IgM E SEU PROCESSO DE OBTENÇÃO PARA DIAGNÓSTICO DA DENGUE BASEADO EM POLÍMERO COM ARQUITETURA TIPO ESCOVA. Dispositivo responsivo a imunoglobulinas IgG e IgM para diagnóstico da dengue baseado em polímero com arquitetura tipo escova, que compreende um polímero como matriz hidrofóbica composta por polietileno de baixa densidade (PEBD) ou por polietileno de alta densidade (PEAD) e o pelímero hidrofílico poli(metacrilato de 2-hidroxietila) (PHEMA) enxertado covalentemente na superfície da referida matriz hidrofóbica, sendo que este último pode ter estrutura de copolímero de bloco, de enxerto, alternado, estatístico. A presente invenção ainda compreende o desenvolvimento de um processo de síntese do polímero PHEMA com arquitetura tipo escova e a obtenção de filmes poliméricos de PHEMA sensíveis a mudanças biológicas na sua interface e que respondem seletivamente a essas mudanças para se adaptar ao meio. Foram analisadas metodologias de incorporação do RHEMA com arquitetura escova em uma matriz hidrofóbica. Ao final, a investigação eletroquímica das propriedades responsivas do dispositivo aos anticorpos imunoglobulina G (IgG) e imunoglobulina M (IgM) indicam o potencial do dispositivo obtido no monitoramento da dengue.",
@@ -4370,7 +4375,8 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "NIKLAUS URSUS WETTER; ALESSANDRO MELO DE ANA"
+      "NIKLAUS URSUS WETTER",
+      "ALESSANDRO MELO DE ANA"
     ],
     "TÍTULO": "LASER DE ESTADO SÓLIDO DE ALTA EFICIÊNCIA E QUALIDADE DE MODO BOMBEADO LATERALMENTE.",
     "RESUMO": "Um laser de estado sólido de alta eficiência bombeado lateralmente por díodo semicondutor que causa uma região de absorção dentro do meio ativo. A boa sobreposição desta área com o modo transversal fundamental do laser confere altíssima eficiência ao laser. Um mecanismo de estreitamento espectral do bombeamento gera uma mais alta absorção dentro do meio ativo com perfil mais parecido a uma exponencial quando comparado com um diodo que não possui este dispositivo. O estreitamento espectral da emissão do diodo faz corn que não existem frequências de bombeamento fora do máximo de absorção do cristal, as quais são menos absorvidas e promovem o transporte de uma fração importante de energia para regiões mais longes da superfície e mais profundas do cristal. A região de bombeamento assim delimitada espacialmente garante que nem para potências de bombeamento muito elevadas as regiões fora da área de sobreposição acumulam suficientemente energia para permitir a oscilação de modos transversais de ordem maior, mantendo a alta qualidade de feixe laser até potências muito elevadas. A melhor delimitação espacial do bombeamento garante uma mais perfeita sobreposição corn o feixe laser, inclusive em potências mais altas, aferindo maior potência e urna maior eficiência ao dispositivo. A tecnologia se aplica de maneira especialmente vantajosa a meios lasers de estado-sólido com absorção moderada, mas também demonstrou resultados excelentes em meios de altíssima absorção.",
@@ -4926,7 +4932,9 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "SOLANGE KAZUMI SAKATA; JULIO CESAR SERAFIM CASINI; RUBENS NUNES DE FARIA JUNIOR"
+			"SOLANGE KAZUMI SAKATA",
+			"JULIO CESAR SERAFIM CASINI",
+			"RUBENS NUNES DE FARIA JUNIOR"
     ],
     "TÍTULO": "REDUÇÃO TÉRMICA DE ÓXIDO DE GRAFENO EM BAIXA TEMPERATURA E PRESSÃO DE HIDROGÊNIO",
     "RESUMO": "REDUÇÃO TÉRMICA DO ÓXIDO DE GRAFENO EM BAIXA TEMPERATURA E PRESSÃO DE HIDROGÊNIO. A presente invenção refere-se a um processo de redução do óxido de grafeno em baixa temperatura e pressão de hidrogênio pelo processo de hidrogenação, desproporção, desorção e recombinação (HDDR). O óxido de grafeno é colocado em uma retorna de aço inoxidável, na qual se introduz o gás redutor/gás inerte com alto grau de pureza. O processo ocorre em sistema a vácuo, submetido a aquecimento por 1 a 2 horas. Ao final, o produto obtido consiste em um nanomaterial com tamanho médio de OG reduzido ou o próprio grafeno entre 20 am e 100 nm, na forma de pó ou de flocos, o qual pode ser aplicado na fabricação de supercapacitores.",
@@ -5017,7 +5025,9 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "ESTEVAM VITORIO SPINCÉ; ALMIR OLIVEIRA NETO; RODOLFO MOLINA ANTONIASSI"
+			"ESTEVAM VITORIO SPINCÉ",
+			"ALMIR OLIVEIRA NETO",
+			"RODOLFO MOLINA ANTONIASSI"
     ],
     "TÍTULO": "PROCESSO DE PREPARAÇÃO DE NANOPARTÍCULAS METÁLICAS SUPORTADAS EM CARBONO PARA APLICAÇÃO COMO ELETROCATALISADORES EM CÉLULAS A COMBUSTÍVEL DE MEMBRANA TROCADORA DE PRÓTONS",
     "RESUMO": "PROCESSO DE PREPARAÇÃO DE NANOPARTÍCULAS METÁLICAS SUPORTADAS EM CARBONO PARA APLICAÇÃO COMO ELETROCATALISADORES EM CÉLULAS ACOMBUSTÍVEL DE MEMBRANA TROCADORA DE PRÓTONS A presente invenção refere-se a um processo de preparação de nanopartículas metálicas com diferentes morfologias e crescimento em direções cristalográficas preferenciais, devido à presença de haletos como agentes direcionadores de estrutura, diretamente suportadas em carbono. A formação e deposição das nanopartículas sobre o suporte de carbono ocorrem em uma mesma etapa do processo de preparação. Os materiais obtidos são aplicados como eletrocatalisadores para cátodo e ânodo em células a combustível de membrana trocadora de prótons (do inglês: Proton Exchance Membrance Fuel Cell – PEMFC).",
@@ -5104,7 +5114,10 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "Ligia Ely Morganti Ferreira Dias; Cleide Maria R. da Silva; Rosa Maria Chura Chambi; e David Peters dos Santos"
+			"Ligia Ely Morganti Ferreira Dias",
+			"Cleide Maria R. da Silva",
+			"Rosa Maria Chura Chambi",
+			"David Peters dos Santos"
     ],
     "TÍTULO": "Processo de Renatauração de proteínas recombinantes a partir de agregados proteicos insolúveis",
     "RESUMO": "",
@@ -5191,7 +5204,15 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "MARIA ELISA CHUERY MARTINS ROSTELATO; SAMIR LUIZ SOMESSARI; OSVALDO LUIZ DA COSTA; JOÃO AUGUSTO MOURA; FRANCISCO EDMUNDO SPRENGER; CARLA DARUICH DE SOUZA; CARLOS ALBERTO ZEITUNI; WILSON APARECIDO PAREJO CALVO; ANSELMO FEHER"
+			"MARIA ELISA CHUERY MARTINS ROSTELATO",
+			"SAMIR LUIZ SOMESSARI",
+			"OSVALDO LUIZ DA COSTA",
+			"JOÃO AUGUSTO MOURA",
+			"FRANCISCO EDMUNDO SPRENGER",
+			"CARLA DARUICH DE SOUZA",
+			"CARLOS ALBERTO ZEITUNI",
+			"WILSON APARECIDO PAREJO CALVO",
+			"ANSELMO FEHER"
     ],
     "TÍTULO": "PROCESSO DE SOLDAGEM A LASER PARA PRODUÇÃO DE FONTES RADIOATIVAS",
     "RESUMO": "PROCESSO DE SOLDAGEM A LASER PARA PRODUÇÃO DE FONTES RADIOATIVAS. A presente invenção refere-se a um processo de soldagem a laser para fontes radioativas utilizadas para tratamento de câncer. A complexidade devido ao tamanho diminuto do material e as exigências de proteção radiológica resultaram num processo único que demandou um estudo detalhado do desenvolvimento de suas etapas. O processo apresentado mostrou-se eficaz e capaz de produzir sementes de iodo-125 com soldas com acabamentos esféricos e qualidade que atendem aos critérios determinados nas normas ISO 2919 e ISO 9978. Os parâmetros utilizados na soldagem a laser mostraram-se adequados, pois as sementes de iodo-125 produzidas não apresentaram poros ou falhas de selagem.",
@@ -5281,7 +5302,9 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ) ; FUNDAÇÃO DE AMPARO À PESQUISA DO ESTADO DE SÃO PAULO - FAPESP (BR/SP)",
     "INVENTOR": [
-      "SONIA REGINA HOMEM DE MELLO CASTANHO; FELIPE ANTUNES SANTOS; ANTONIO CARLOS DA SILVA"
+			"SONIA REGINA HOMEM DE MELLO CASTANHO",
+			"FELIPE ANTUNES SANTOS",
+			"ANTONIO CARLOS DA SILVA"
     ],
     "TÍTULO": "REVESTIMENTO VÍTREO MULTIFUNCIONAL PARA APLICAÇÃO EM MEIO BIOLÓGICO",
     "RESUMO": "da Patente 'REVESTIMENTO VÍTREO MULTIFUNCIONALPARA APLICAÇÃO EM MEIO BIOLÓGICO'.A presente invenção refere-se ao desenvolvimento de revestimentos vítreosmultifuncionais do sistema Si02-CaO-Na2O-Me - com comportamento biocida, nãocitotóxico e promotor de osseointegração — destinado a ambientes suscetíveis ainfecções locais bacterianas de pós-operatórios; sendo Me caracterizado pelos metais:nióbio (Nb), tântalo (Ta) e zircônio (Zr) - não restringindo a tais metais ou óxidosmetálicos desde que possuam as características biocompatíveis multifuncionaisdescritas.",
@@ -5369,7 +5392,11 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "MICHELANGELO DURAZZO; GILBERTO HAGE MARCONDES; ADONIS MARCELO SALIBA SILVA; ELITA FONTENELE URANO DE CARVALHO; HUMBERTO GRACHER RIELLA"
+			"MICHELANGELO DURAZZO",
+			"GILBERTO HAGE MARCONDES",
+			"ADONIS MARCELO SALIBA SILVA",
+			"ELITA FONTENELE URANO DE CARVALHO",
+			"HUMBERTO GRACHER RIELLA"
     ],
     "TÍTULO": "MÉTODO DE MEDIÇÃO DA ESPESSURA DO REVESTIMENTO DE PLACAS COMBUSTÍVEIS NUCLEARES",
     "RESUMO": "MÉTODO DE MEDIÇÃO DA ESPESSURA DO REVESTIMENTO DE PLACAS COMBUSTÍVEIS NUCLEARES' Método de medição das espessuras dos revestimentos e do núcleo de placas combustíveis usadas como combustível em reatores nucleares, tipicamente formadas pela laminação de um conjunto formado por uma moldura, um núcleo combustível, e duas placas de revestimento. O método de medição é baseado no processamento automático de imagens obtidas por microscopia eletrônica de varredura de seções transversais da placa combustível. O sinal usado para a geração das imagens é o de elétrons retroespalhados, o qual gera um alto contraste entre as partículas de combustível e o alumínio estrutural da placa combustível. O alto contraste obtido permite que as imagens sejam processadas automaticamente sem intervenção de um operador e, portanto, sem depender da acuidade visual do mesmo. O procedimento para a preparação metalográfica das amostras é significativamente simplificado, com ganhos em termos de tempo e custo da análise. Após a obtenção da imagem, uma vez determinada a sua resolução com uma escala, as medições das espessuras dos revestimentos e do núcleo da placa combustível são realizadas automaticamente por meio de um programa de análise de imagem. A precisão típica da medição é ± 0,001 mm, sendo limitada apenas pela resolução da imagem gerada pelo microscópio eletrônico de varredura.",
@@ -5459,7 +5486,8 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "DENISE ALVES FUNGARO; SUZIMARA ROVANI"
+      "DENISE ALVES FUNGARO",
+      "SUZIMARA ROVANI"
     ],
     "TÍTULO": "PROCESSO DE PRODUÇÃO DE NANOSÍLICA A PARTIR DE CINZAS DE RESÍDUO DE CANA-DE-AÇÚCAR",
     "RESUMO": "",
@@ -5546,7 +5574,13 @@
     "SITUAÇÃO": "Pedido",
     "TITULAR": "COMISSÃO NACIONAL DE ENERGIA NUCLEAR (BR/RJ)",
     "INVENTOR": [
-      "WILSON APARECIDO PAREJO CALVO; NELSON XAVIER DOURADO; NELSON MINORU OMI; CELIA MARINA NAPOLITANO; JOSÉ JORGE AMBIEL; ANSELMO FEHER; SAMIR LUIS SOMESSARI"
+			"WILSON APARECIDO PAREJO CALVO",
+			"NELSON XAVIER DOURADO",
+			"NELSON MINORU OMI",
+			"CELIA MARINA NAPOLITANO",
+			"JOSÉ JORGE AMBIEL",
+			"ANSELMO FEHER",
+			"SAMIR LUIS SOMESSARI"
     ],
     "TÍTULO": "SISTEMA DE IRRADIAÇÃO PARA PRODUÇÃO DE RADIOISÓTOPOS GASOSOS",
     "RESUMO": "",
@@ -6335,8 +6369,10 @@
     "INVENTOR": [
       "Michelangelo Durazzo",
       "José Antonio B. de Souza",
-      "Ricardo Ferreira Ianelli e Eriki Masahiko Takara",
-      "José dos Santos Garcia Neto e Adonis Marcelo Saliba da Silva"
+      "Ricardo Ferreira Ianelli",
+      "Eriki Masahiko Takara",
+      "José dos Santos Garcia Neto",
+      "Adonis Marcelo Saliba da Silva"
     ],
     "TÍTULO": "Dispositivo e método para montagem de alvos de urânio metálico para produção de Mo-99",
     "RESUMO": "",
@@ -6512,7 +6548,8 @@
     "INVENTOR": [
       "Solange Kazumi Sakata",
       "Ma´rcio Henrique Zaim",
-      "Jacqueline Jamara Souza Soares e Raynara Maria Silva Jacovone"
+      "Jacqueline Jamara Souza Soares",
+      "Raynara Maria Silva Jacovone"
     ],
     "TÍTULO": "Processo de incorporação de compósito à base de óxido de grafeno em tecido biológico contendo colágeno tipo I e tecido biológico modificado obtido",
     "RESUMO": "",

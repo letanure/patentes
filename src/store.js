@@ -14,6 +14,14 @@ const allClassifications = () => {
   return [...new Set(list)]
 }
 
+const allInventors = () => {
+  let list = []
+  allPatents.forEach(item => {
+    list = [...list, ...item['INVENTOR']]
+  })
+  return [...new Set(list)]
+}
+
 const allNatures = () => {
   let list = []
   allPatents.forEach(item => {
@@ -37,7 +45,10 @@ export default new Vuex.Store({
     allClassifications: allClassifications(),
 
     natureAll: allNatures(),
-    naturesActives: []
+    naturesActives: [],
+
+    inventorsAll: allInventors(),
+    inventorsActives: []
   },
 
   mutations: {
@@ -49,6 +60,10 @@ export default new Vuex.Store({
     },
     UPDATE_NATURES (state, data) {
       state.naturesActives = data
+    },
+
+    UPDATE_INVENTORS (state, data) {
+      state.inventorsActives = data
     }
   },
 
@@ -63,6 +78,10 @@ export default new Vuex.Store({
 
     updateNaturesActives ({ commit, state }, data) {
       commit('UPDATE_NATURES', data)
+    },
+
+    updateInventorsActives ({ commit, state }, data) {
+      commit('UPDATE_INVENTORS', data)
     }
   },
 
@@ -80,6 +99,12 @@ export default new Vuex.Store({
       if (state.naturesActives.length > 0) {
         list = list.filter(item => {
           return state.naturesActives.includes(item['NATUREZA'])
+        })
+      }
+
+      if (state.inventorsActives.length > 0) {
+        list = list.filter(item => {
+          return _.intersection(item['INVENTOR'], state.inventorsActives).length > 0
         })
       }
 

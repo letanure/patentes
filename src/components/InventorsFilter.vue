@@ -1,14 +1,14 @@
 <template>
-  <div class="NaturesFilter">
+  <div class="InventorsFilter">
     <el-select
       @change="change"
       filterable
       multiple
-      placeholder="Naturezas"
-      v-model="naturesActives"
+      placeholder="Inventores"
+      v-model="inventorsActives"
     >
       <el-option
-        v-for="item in natureAll"
+        v-for="item in inventorsAll"
         :key="item"
         :label="item"
         :value="item"
@@ -22,23 +22,23 @@
 import { mapState } from 'vuex'
 
 export default {
-  name: 'NaturesFilter',
+  name: 'InventorsFilter',
 
   data () {
     return {
-      naturesActives: this.$store.state.naturesActives
+      inventorsActives: this.$store.state.inventorsActives
     }
   },
 
   computed: {
     ...mapState({
-      natureAll: 'natureAll'
+      inventorsAll: 'inventorsAll'
     })
   },
 
   methods: {
     change (data) {
-      this.$store.dispatch('updateNaturesActives', data)
+      this.$store.dispatch('updateInventorsActives', data)
     }
   }
 
