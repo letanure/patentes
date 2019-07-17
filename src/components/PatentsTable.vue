@@ -43,7 +43,6 @@
           </template>
       </el-table-column>
       <el-table-column
-        fixed="right"
         label="Operations"
         width="120">
         <template slot-scope="scope">
