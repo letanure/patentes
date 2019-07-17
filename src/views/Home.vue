@@ -48,7 +48,7 @@
           <template slot-scope="scope">
             <template v-if="scope.column.property === 'CLASSIFICAÇÃO'">
               <el-tag
-                v-for="tag in scope.row[scope.column.property].split(', ')"
+                v-for="tag in scope.row[scope.column.property]"
                 :key="tag"
                 size="small"
                 xtype="info">
@@ -100,7 +100,7 @@ export default {
     classifications () {
       let list = []
       patentes.forEach(item => {
-        list = [...list, ...item['CLASSIFICAÇÃO'].split(', ')]
+        list = [...list, ...item['CLASSIFICAÇÃO']]
       })
       return [...new Set(list)]
     },
@@ -108,7 +108,7 @@ export default {
       let list = patentes
       if (this.classificationsActive.length > 0) {
         list = list.filter(item => {
-          return item['CLASSIFICAÇÃO'].split(' ,').every(elem => this.classificationsActive.indexOf(elem) > -1)
+          return item['CLASSIFICAÇÃO'].every(elem => this.classificationsActive.indexOf(elem) > -1)
         })
       }
       return list
