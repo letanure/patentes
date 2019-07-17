@@ -5,7 +5,6 @@
     <el-card class="box-card">
       <div slot="header" class="clearfix">
         <span>Filtros</span>
-        <el-button style="float: right; padding: 3px 0" type="text">Operation button</el-button>
       </div>
       <el-row :gutter="20">
         <el-col :span="10">

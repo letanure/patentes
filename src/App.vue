@@ -3,7 +3,7 @@
     <el-container>
       <!-- <el-aside width="200px">Aside</el-aside> -->
       <el-container>
-        <el-header>
+        <!-- <el-header>
           <el-menu class="el-menu-demo" mode="horizontal">
             <el-menu-item index="1">
               <router-link to="/">Home</router-link>
@@ -12,11 +12,11 @@
               <router-link to="/about">About</router-link>
             </el-menu-item>
           </el-menu>
-        </el-header>
+        </el-header> -->
         <el-main>
           <router-view/>
         </el-main>
-        <el-footer>Footer</el-footer>
+        <!-- <el-footer>Footer</el-footer> -->
       </el-container>
     </el-container>
   </div>
