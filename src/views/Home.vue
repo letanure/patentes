@@ -36,14 +36,38 @@
     <el-table
       :data="patentesFiltered"
       stripe
+      height="550"
       style="width: 100%">
       <el-table-column
         v-for="(item, index) in columnsToShow"
         :key="index"
         :prop="item"
         :label="item"
+        sortable
         >
+          <template slot-scope="scope">
+            <template v-if="scope.column.property === 'CLASSIFICAÇÃO'">
+              <el-tag
+                v-for="tag in scope.row[scope.column.property].split(', ')"
+                :key="tag"
+                size="small"
+                xtype="info">
+                  {{tag}}
+              </el-tag>
+            </template>
+            <template v-else >
+              {{ scope.row[scope.column.property] }}
+            </template>
+          </template>
       </el-table-column>
+      <el-table-column
+      fixed="right"
+      label="Operations"
+      width="120">
+      <template>
+        <el-button type="text" size="small"></el-button>
+      </template>
+    </el-table-column>
     </el-table>
   </div>
 </template>
@@ -96,4 +120,6 @@ export default {
 <style lang="stylus">
 .el-select
   width 100%
+.el-tag
+  margin 0 5px 5px 0
 </style>
