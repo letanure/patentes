@@ -19,7 +19,16 @@
         sortable
         >
           <template slot-scope="scope">
-            <template v-if="scope.column.property === 'CLASSIFICAÇÃO'">
+            <template v-if="scope.column.property === 'PROCESSO'">
+              <form action="https://gru.inpi.gov.br/pePI/servlet/PatenteServletController" target='_blank'>
+                <input type="hidden" name="NumPedido" :value="`${scope.row['NATUREZA']} ${scope.row[scope.column.property]}`" />
+                <input type="hidden" name="Action" value="SearchBasico" />
+                <el-button type="text" native-type="submit">
+                  {{ scope.row[scope.column.property] }}
+                </el-button>
+              </form>
+            </template>
+            <template v-else-if="scope.column.property === 'CLASSIFICAÇÃO'">
               <el-tag
                 v-for="tag in scope.row[scope.column.property]"
                 :key="tag"
