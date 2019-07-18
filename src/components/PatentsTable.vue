@@ -23,19 +23,42 @@
               <form action="https://gru.inpi.gov.br/pePI/servlet/PatenteServletController" target='_blank'>
                 <input type="hidden" name="NumPedido" :value="`${scope.row['NATUREZA']} ${scope.row[scope.column.property]}`" />
                 <input type="hidden" name="Action" value="SearchBasico" />
-                <el-button type="text" native-type="submit">
+                <el-button type="text" native-type="submit" size="mini">
                   {{ scope.row[scope.column.property] }}
                 </el-button>
               </form>
             </template>
             <template v-else-if="scope.column.property === 'CLASSIFICAÇÃO'">
-              <el-tag
-                v-for="tag in scope.row[scope.column.property]"
-                :key="tag"
-                size="small"
-                >
-                  {{tag}}
-              </el-tag>
+              <form
+                v-for="code in scope.row[scope.column.property]"
+                :key="code"
+                action="https://gru.inpi.gov.br/pePI/servlet/PatenteServletController" target='_blank'>
+                  <input type="hidden" name="NumPedido" value="" />
+                  <input type="hidden" name="ListaNumeroPatente" value=" " />
+                  <input type="hidden" name="NumPrioridade" value="" />
+                  <input type="hidden" name="CodigoPct" value="" />
+                  <input type="hidden" name="DataDeposito1" value="" />
+                  <input type="hidden" name="DataDeposito2" value="" />
+                  <input type="hidden" name="DataPrioridade1" value="" />
+                  <input type="hidden" name="DataPrioridade2" value="" />
+                  <input type="hidden" name="DataDepositoPCT1" value="" />
+                  <input type="hidden" name="DataDepositoPCT2" value="" />
+                  <input type="hidden" name="DataPublicacaoPCT1" value="" />
+                  <input type="hidden" name="DataPublicacaoPCT2" value="" />
+                  <input type="hidden" name="ClassificacaoIPC" :value="code" />
+                  <input type="hidden" name="CatchWordIPC" value="" />
+                  <input type="hidden" name="Titulo" value="" />
+                  <input type="hidden" name="Resumo" value="" />
+                  <input type="hidden" name="NomeDepositante" value="" />
+                  <input type="hidden" name="CpfCnpjDepositante" value="" />
+                  <input type="hidden" name="NomeInventor" value="" />
+                  <input type="hidden" name="RegisterPerPage" value="20" />
+                  <input type="hidden" name="botao" value=" pesquisar » " />
+                  <input type="hidden" name="Action" value="SearchAvancado" />
+                <el-button native-type="submit" size="mini">
+                  {{ code }}
+                </el-button>
+              </form>
             </template>
             <template v-else-if="scope.column.property === 'INVENTOR'">
               <el-tag
