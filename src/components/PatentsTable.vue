@@ -102,7 +102,7 @@ export default {
   data () {
     return {
       detailsVisible: false,
-      dialogVisible: true,
+      dialogVisible: false,
       dialogCode: '',
       indexVisible: 0
     }
