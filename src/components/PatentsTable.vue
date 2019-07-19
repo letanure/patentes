@@ -29,7 +29,7 @@
               </form>
             </template>
             <template v-else-if="scope.column.property === 'CLASSIFICAÇÃO'">
-              <form
+              <!-- <form
                 v-for="code in scope.row[scope.column.property]"
                 :key="code"
                 action="https://gru.inpi.gov.br/pePI/servlet/PatenteServletController" target='_blank'>
@@ -58,7 +58,20 @@
                 <el-button native-type="submit" size="mini">
                   {{ code }}
                 </el-button>
-              </form>
+
+              </form> -->
+
+              <a
+                v-for="code in scope.row[scope.column.property]"
+                :key="code"
+                :href="`https://worldwide.espacenet.com/classification/#!/CPC=${code.split(' ')[0]}`"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <el-button native-type="submit" size="mini">
+                  {{ code }}
+                </el-button>
+              </a>
             </template>
             <template v-else-if="scope.column.property === 'INVENTOR'">
               <el-tag
