@@ -29,39 +29,15 @@
               </form>
             </template>
             <template v-else-if="scope.column.property === 'CLASSIFICAÇÃO'">
-              <!-- <form
+              <el-button
                 v-for="code in scope.row[scope.column.property]"
                 :key="code"
-                action="https://gru.inpi.gov.br/pePI/servlet/PatenteServletController" target='_blank'>
-                  <input type="hidden" name="NumPedido" value="" />
-                  <input type="hidden" name="ListaNumeroPatente" value=" " />
-                  <input type="hidden" name="NumPrioridade" value="" />
-                  <input type="hidden" name="CodigoPct" value="" />
-                  <input type="hidden" name="DataDeposito1" value="" />
-                  <input type="hidden" name="DataDeposito2" value="" />
-                  <input type="hidden" name="DataPrioridade1" value="" />
-                  <input type="hidden" name="DataPrioridade2" value="" />
-                  <input type="hidden" name="DataDepositoPCT1" value="" />
-                  <input type="hidden" name="DataDepositoPCT2" value="" />
-                  <input type="hidden" name="DataPublicacaoPCT1" value="" />
-                  <input type="hidden" name="DataPublicacaoPCT2" value="" />
-                  <input type="hidden" name="ClassificacaoIPC" :value="code" />
-                  <input type="hidden" name="CatchWordIPC" value="" />
-                  <input type="hidden" name="Titulo" value="" />
-                  <input type="hidden" name="Resumo" value="" />
-                  <input type="hidden" name="NomeDepositante" value="" />
-                  <input type="hidden" name="CpfCnpjDepositante" value="" />
-                  <input type="hidden" name="NomeInventor" value="" />
-                  <input type="hidden" name="RegisterPerPage" value="20" />
-                  <input type="hidden" name="botao" value=" pesquisar » " />
-                  <input type="hidden" name="Action" value="SearchAvancado" />
-                <el-button native-type="submit" size="mini">
+                native-type="submit"
+                size="mini"
+                @click="openDialog(code)">
                   {{ code }}
                 </el-button>
-
-              </form> -->
-
-              <a
+              <!-- <a
                 v-for="code in scope.row[scope.column.property]"
                 :key="code"
                 :href="`https://worldwide.espacenet.com/classification/#!/CPC=${code.split(' ')[0]}`"
@@ -71,7 +47,7 @@
                 <el-button native-type="submit" size="mini">
                   {{ code }}
                 </el-button>
-              </a>
+              </a> -->
             </template>
             <template v-else-if="scope.column.property === 'INVENTOR'">
               <el-tag
@@ -95,7 +71,19 @@
         </template>
       </el-table-column>
     </el-table>
+    <el-dialog
+      :title="`Classificacao: ${dialogCode}`"
+      :visible.sync="dialogVisible"
+      width="1050px"
+      :before-close="handleClose">
+        <iframe
+          :src="`https://worldwide.espacenet.com/classification/#!/CPC=${dialogCode.split(' ')[0]}`" frameborder="0"></iframe>
+        <!-- <span slot="footer" class="dialog-footer">
+          <el-button @click="dialogVisible = false">Fechar</el-button>
+        </span> -->
+    </el-dialog>
   </div>
+
 </template>
 
 <script>
@@ -114,6 +102,8 @@ export default {
   data () {
     return {
       detailsVisible: false,
+      dialogVisible: true,
+      dialogCode: '',
       indexVisible: 0
     }
   },
@@ -131,10 +121,25 @@ export default {
     openDetail (index) {
       this.indexVisible = index
       this.detailsVisible = true
+    },
+    handleClose () {
+      this.dialogVisible = false
+      this.dialogCode = ''
+    },
+    openDialog (code) {
+      this.dialogCode = code
+      this.dialogVisible = true
     }
   }
 }
 </script>
 
-<style scoped lang="stylus">
+<style lang="stylus">
+.el-dialog
+  height 80vh
+
+iframe
+  height 69vh
+  display block
+  width 100%
 </style>
