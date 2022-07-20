@@ -1,5 +1,7 @@
 # patentes
 
+[abandoned]
+
 ## Project setup
 ```
 yarn install
